@@ -15,8 +15,10 @@
 //     return view('welcome');
 // });
 
+
+Route::get('/', 'Ticket\TicketController@index')->name('ticket.index');
+
 Route::group(['middleware' => 'auth'], function() {
-    Route::get('/', 'Ticket\TicketController@index')->name('ticket.index');
     Route::post('/confirm', 'Ticket\TicketController@confirm');
     Route::post('/complete', 'Ticket\TicketController@complete');
     Route::get('/history', 'Ticket\TicketController@history')->name('ticket.history');
