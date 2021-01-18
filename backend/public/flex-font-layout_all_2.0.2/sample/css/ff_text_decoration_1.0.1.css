@@ -1,0 +1,78 @@
+@charset "utf-8";
+/****			このコメントを削除しないで下さい。
+@package		ff_text_decoration.css
+@version		1.0.1
+@license		商用以外でのご利用は無料です。詳しくは https://flex-font.com/license をご覧ください。※このスクリプトは著作権で守られています。
+
+[商用利用ライセンスコード：未設定]
+
+テキストの縁取りなど装飾用CSSです。
+
+使用方法		https://flex-font.com/how_to/
+****/
+/* フォントをインポート */
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif+JP|Kosugi+Maru|Cantata+One&display=swap); /* Noto Serif JP（明朝）, 小杉丸ゴシック,数字 */
+/* 明朝 */
+.mincho {
+  /* Noto Serif JP（明朝）*/
+  font-family: 'Noto Serif JP', "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+/* 丸文字 */
+.marumoji {
+  /* 小杉丸ゴシック */
+  font-family: 'Kosugi Maru', sans-serif;
+}
+/* 数字 */
+.number {
+  /* Cantata One */
+  font-family: 'Cantata One';
+}
+/* 太字 */
+.bold {
+  font-weight: bold;
+}
+/* 縦書き */
+.tategaki {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+/* 影 */
+.kage {
+  text-shadow: 0 0.1em 0.04em rgba(0, 0, 0, 1);
+}
+/* 影 二重 */
+.kage_2ju {
+  text-shadow: 0.04em 0.04em #fff, 0.08em 0.08em rgba(0, 0, 0, 0.15);
+}
+/* 影 右下 */
+.kage_migishita_003em_000000_50 {
+  text-shadow: 0.03em 0.03em 0.01em rgba(0, 0, 0, 0.5);
+}
+.kage_migishita_007em_000000_35 {
+  text-shadow: 0.07em 0.1em 0.01em rgba(0, 0, 0, 0.35);
+}
+/* 縁 */
+.fuchi {
+  text-shadow: 0.06em 0.06em 0.05em #ffffff, -0.06em 0.06em 0.05em #ffffff, 0.06em -0.06em 0.05em #ffffff, -0.06em -0.06em 0.05em #ffffff, 0.06em 0px 0.05em #ffffff, 0px 0.06em 0.05em #ffffff, -0.06em 0px 0.05em #ffffff, 0px -0.06em 0.05em #ffffff;
+}
+/* 縁 丸 */
+.fuchi_maru_01em_ffffff {
+  text-shadow: 0.10em 0.00em 0.03em #ffffff, 0.10em 0.01em 0.03em #ffffff, 0.10em 0.02em 0.03em #ffffff, 0.10em 0.03em 0.03em #ffffff, 0.09em 0.04em 0.03em #ffffff, 0.09em 0.05em 0.03em #ffffff, 0.08em 0.06em 0.03em #ffffff, 0.08em 0.06em 0.03em #ffffff, 0.07em 0.07em 0.03em #ffffff, 0.06em 0.08em 0.03em #ffffff, 0.06em 0.08em 0.03em #ffffff, 0.05em 0.09em 0.03em #ffffff, 0.04em 0.09em 0.03em #ffffff, 0.03em 0.10em 0.03em #ffffff, 0.02em 0.10em 0.03em #ffffff, 0.01em 0.10em 0.03em #ffffff, 0.00em 0.10em 0.03em #ffffff, -0.01em 0.10em 0.03em #ffffff, -0.02em 0.10em 0.03em #ffffff, -0.03em 0.10em 0.03em #ffffff, -0.04em 0.09em 0.03em #ffffff, -0.05em 0.09em 0.03em #ffffff, -0.06em 0.08em 0.03em #ffffff, -0.06em 0.08em 0.03em #ffffff, -0.07em 0.07em 0.03em #ffffff, -0.08em 0.06em 0.03em #ffffff, -0.08em 0.06em 0.03em #ffffff, -0.09em 0.05em 0.03em #ffffff, -0.09em 0.04em 0.03em #ffffff, -0.10em 0.03em 0.03em #ffffff, -0.10em 0.02em 0.03em #ffffff, -0.10em 0.01em 0.03em #ffffff, -0.10em 0.00em 0.03em #ffffff, -0.10em -0.01em 0.03em #ffffff, -0.10em -0.02em 0.03em #ffffff, -0.10em -0.03em 0.03em #ffffff, -0.09em -0.04em 0.03em #ffffff, -0.09em -0.05em 0.03em #ffffff, -0.08em -0.06em 0.03em #ffffff, -0.08em -0.06em 0.03em #ffffff, -0.07em -0.07em 0.03em #ffffff, -0.06em -0.08em 0.03em #ffffff, -0.06em -0.08em 0.03em #ffffff, -0.05em -0.09em 0.03em #ffffff, -0.04em -0.09em 0.03em #ffffff, -0.03em -0.10em 0.03em #ffffff, -0.02em -0.10em 0.03em #ffffff, -0.01em -0.10em 0.03em #ffffff, 0.00em -0.10em 0.03em #ffffff, 0.01em -0.10em 0.03em #ffffff, 0.02em -0.10em 0.03em #ffffff, 0.03em -0.10em 0.03em #ffffff, 0.04em -0.09em 0.03em #ffffff, 0.05em -0.09em 0.03em #ffffff, 0.06em -0.08em 0.03em #ffffff, 0.06em -0.08em 0.03em #ffffff, 0.07em -0.07em 0.03em #ffffff, 0.08em -0.06em 0.03em #ffffff, 0.08em -0.06em 0.03em #ffffff, 0.09em -0.05em 0.03em #ffffff, 0.09em -0.04em 0.03em #ffffff, 0.10em -0.03em 0.03em #ffffff, 0.10em -0.02em 0.03em #ffffff, 0.10em -0.01em 0.03em #ffffff;
+}
+.fuchi_maru_01em_16578f {
+  text-shadow: 0.10em 0.00em 0.03em #16578f, 0.10em 0.01em 0.03em #16578f, 0.10em 0.02em 0.03em #16578f, 0.10em 0.03em 0.03em #16578f, 0.09em 0.04em 0.03em #16578f, 0.09em 0.05em 0.03em #16578f, 0.08em 0.06em 0.03em #16578f, 0.08em 0.06em 0.03em #16578f, 0.07em 0.07em 0.03em #16578f, 0.06em 0.08em 0.03em #16578f, 0.06em 0.08em 0.03em #16578f, 0.05em 0.09em 0.03em #16578f, 0.04em 0.09em 0.03em #16578f, 0.03em 0.10em 0.03em #16578f, 0.02em 0.10em 0.03em #16578f, 0.01em 0.10em 0.03em #16578f, 0.00em 0.10em 0.03em #16578f, -0.01em 0.10em 0.03em #16578f, -0.02em 0.10em 0.03em #16578f, -0.03em 0.10em 0.03em #16578f, -0.04em 0.09em 0.03em #16578f, -0.05em 0.09em 0.03em #16578f, -0.06em 0.08em 0.03em #16578f, -0.06em 0.08em 0.03em #16578f, -0.07em 0.07em 0.03em #16578f, -0.08em 0.06em 0.03em #16578f, -0.08em 0.06em 0.03em #16578f, -0.09em 0.05em 0.03em #16578f, -0.09em 0.04em 0.03em #16578f, -0.10em 0.03em 0.03em #16578f, -0.10em 0.02em 0.03em #16578f, -0.10em 0.01em 0.03em #16578f, -0.10em 0.00em 0.03em #16578f, -0.10em -0.01em 0.03em #16578f, -0.10em -0.02em 0.03em #16578f, -0.10em -0.03em 0.03em #16578f, -0.09em -0.04em 0.03em #16578f, -0.09em -0.05em 0.03em #16578f, -0.08em -0.06em 0.03em #16578f, -0.08em -0.06em 0.03em #16578f, -0.07em -0.07em 0.03em #16578f, -0.06em -0.08em 0.03em #16578f, -0.06em -0.08em 0.03em #16578f, -0.05em -0.09em 0.03em #16578f, -0.04em -0.09em 0.03em #16578f, -0.03em -0.10em 0.03em #16578f, -0.02em -0.10em 0.03em #16578f, -0.01em -0.10em 0.03em #16578f, 0.00em -0.10em 0.03em #16578f, 0.01em -0.10em 0.03em #16578f, 0.02em -0.10em 0.03em #16578f, 0.03em -0.10em 0.03em #16578f, 0.04em -0.09em 0.03em #16578f, 0.05em -0.09em 0.03em #16578f, 0.06em -0.08em 0.03em #16578f, 0.06em -0.08em 0.03em #16578f, 0.07em -0.07em 0.03em #16578f, 0.08em -0.06em 0.03em #16578f, 0.08em -0.06em 0.03em #16578f, 0.09em -0.05em 0.03em #16578f, 0.09em -0.04em 0.03em #16578f, 0.10em -0.03em 0.03em #16578f, 0.10em -0.02em 0.03em #16578f, 0.10em -0.01em 0.03em #16578f;
+}
+.fuchi_maru_01em_347f29 {
+  text-shadow: 0.10em 0.00em 0.03em #347f29, 0.10em 0.01em 0.03em #347f29, 0.10em 0.02em 0.03em #347f29, 0.10em 0.03em 0.03em #347f29, 0.09em 0.04em 0.03em #347f29, 0.09em 0.05em 0.03em #347f29, 0.08em 0.06em 0.03em #347f29, 0.08em 0.06em 0.03em #347f29, 0.07em 0.07em 0.03em #347f29, 0.06em 0.08em 0.03em #347f29, 0.06em 0.08em 0.03em #347f29, 0.05em 0.09em 0.03em #347f29, 0.04em 0.09em 0.03em #347f29, 0.03em 0.10em 0.03em #347f29, 0.02em 0.10em 0.03em #347f29, 0.01em 0.10em 0.03em #347f29, 0.00em 0.10em 0.03em #347f29, -0.01em 0.10em 0.03em #347f29, -0.02em 0.10em 0.03em #347f29, -0.03em 0.10em 0.03em #347f29, -0.04em 0.09em 0.03em #347f29, -0.05em 0.09em 0.03em #347f29, -0.06em 0.08em 0.03em #347f29, -0.06em 0.08em 0.03em #347f29, -0.07em 0.07em 0.03em #347f29, -0.08em 0.06em 0.03em #347f29, -0.08em 0.06em 0.03em #347f29, -0.09em 0.05em 0.03em #347f29, -0.09em 0.04em 0.03em #347f29, -0.10em 0.03em 0.03em #347f29, -0.10em 0.02em 0.03em #347f29, -0.10em 0.01em 0.03em #347f29, -0.10em 0.00em 0.03em #347f29, -0.10em -0.01em 0.03em #347f29, -0.10em -0.02em 0.03em #347f29, -0.10em -0.03em 0.03em #347f29, -0.09em -0.04em 0.03em #347f29, -0.09em -0.05em 0.03em #347f29, -0.08em -0.06em 0.03em #347f29, -0.08em -0.06em 0.03em #347f29, -0.07em -0.07em 0.03em #347f29, -0.06em -0.08em 0.03em #347f29, -0.06em -0.08em 0.03em #347f29, -0.05em -0.09em 0.03em #347f29, -0.04em -0.09em 0.03em #347f29, -0.03em -0.10em 0.03em #347f29, -0.02em -0.10em 0.03em #347f29, -0.01em -0.10em 0.03em #347f29, 0.00em -0.10em 0.03em #347f29, 0.01em -0.10em 0.03em #347f29, 0.02em -0.10em 0.03em #347f29, 0.03em -0.10em 0.03em #347f29, 0.04em -0.09em 0.03em #347f29, 0.05em -0.09em 0.03em #347f29, 0.06em -0.08em 0.03em #347f29, 0.06em -0.08em 0.03em #347f29, 0.07em -0.07em 0.03em #347f29, 0.08em -0.06em 0.03em #347f29, 0.08em -0.06em 0.03em #347f29, 0.09em -0.05em 0.03em #347f29, 0.09em -0.04em 0.03em #347f29, 0.10em -0.03em 0.03em #347f29, 0.10em -0.02em 0.03em #347f29, 0.10em -0.01em 0.03em #347f29;
+}
+.fuchi_maru_005em_ffffff {
+  text-shadow: 0.05em 0.00em 0.01em #ffffff, 0.05em 0.00em 0.01em #ffffff, 0.05em 0.01em 0.01em #ffffff, 0.05em 0.01em 0.01em #ffffff, 0.05em 0.02em 0.01em #ffffff, 0.04em 0.02em 0.01em #ffffff, 0.04em 0.03em 0.01em #ffffff, 0.04em 0.03em 0.01em #ffffff, 0.04em 0.04em 0.01em #ffffff, 0.03em 0.04em 0.01em #ffffff, 0.03em 0.04em 0.01em #ffffff, 0.02em 0.04em 0.01em #ffffff, 0.02em 0.05em 0.01em #ffffff, 0.01em 0.05em 0.01em #ffffff, 0.01em 0.05em 0.01em #ffffff, 0.00em 0.05em 0.01em #ffffff, 0.00em 0.05em 0.01em #ffffff, 0.00em 0.05em 0.01em #ffffff, -0.01em 0.05em 0.01em #ffffff, -0.01em 0.05em 0.01em #ffffff, -0.02em 0.05em 0.01em #ffffff, -0.02em 0.04em 0.01em #ffffff, -0.03em 0.04em 0.01em #ffffff, -0.03em 0.04em 0.01em #ffffff, -0.04em 0.04em 0.01em #ffffff, -0.04em 0.03em 0.01em #ffffff, -0.04em 0.03em 0.01em #ffffff, -0.04em 0.02em 0.01em #ffffff, -0.05em 0.02em 0.01em #ffffff, -0.05em 0.01em 0.01em #ffffff, -0.05em 0.01em 0.01em #ffffff, -0.05em 0.00em 0.01em #ffffff, -0.05em 0.00em 0.01em #ffffff, -0.05em 0.00em 0.01em #ffffff, -0.05em -0.01em 0.01em #ffffff, -0.05em -0.01em 0.01em #ffffff, -0.05em -0.02em 0.01em #ffffff, -0.04em -0.02em 0.01em #ffffff, -0.04em -0.03em 0.01em #ffffff, -0.04em -0.03em 0.01em #ffffff, -0.04em -0.04em 0.01em #ffffff, -0.03em -0.04em 0.01em #ffffff, -0.03em -0.04em 0.01em #ffffff, -0.02em -0.04em 0.01em #ffffff, -0.02em -0.05em 0.01em #ffffff, -0.01em -0.05em 0.01em #ffffff, -0.01em -0.05em 0.01em #ffffff, 0.00em -0.05em 0.01em #ffffff, 0.00em -0.05em 0.01em #ffffff, 0.00em -0.05em 0.01em #ffffff, 0.01em -0.05em 0.01em #ffffff, 0.01em -0.05em 0.01em #ffffff, 0.02em -0.05em 0.01em #ffffff, 0.02em -0.04em 0.01em #ffffff, 0.03em -0.04em 0.01em #ffffff, 0.03em -0.04em 0.01em #ffffff, 0.04em -0.04em 0.01em #ffffff, 0.04em -0.03em 0.01em #ffffff, 0.04em -0.03em 0.01em #ffffff, 0.04em -0.02em 0.01em #ffffff, 0.05em -0.02em 0.01em #ffffff, 0.05em -0.01em 0.01em #ffffff, 0.05em -0.01em 0.01em #ffffff, 0.05em 0.00em 0.01em #ffffff;
+}
+.fuchi_maru_002em_ffffff_and_kage {
+  text-shadow: 0.03em 0.00em 0.01em #ffffff, 0.03em 0.00em 0.01em #ffffff, 0.03em 0.01em 0.01em #ffffff, 0.03em 0.01em 0.01em #ffffff, 0.03em 0.01em 0.01em #ffffff, 0.03em 0.01em 0.01em #ffffff, 0.02em 0.02em 0.01em #ffffff, 0.02em 0.02em 0.01em #ffffff, 0.02em 0.02em 0.01em #ffffff, 0.02em 0.02em 0.01em #ffffff, 0.02em 0.02em 0.01em #ffffff, 0.01em 0.03em 0.01em #ffffff, 0.01em 0.03em 0.01em #ffffff, 0.01em 0.03em 0.01em #ffffff, 0.01em 0.03em 0.01em #ffffff, 0.00em 0.03em 0.01em #ffffff, 0.00em 0.03em 0.01em #ffffff, 0.00em 0.03em 0.01em #ffffff, -0.01em 0.03em 0.01em #ffffff, -0.01em 0.03em 0.01em #ffffff, -0.01em 0.03em 0.01em #ffffff, -0.01em 0.03em 0.01em #ffffff, -0.02em 0.02em 0.01em #ffffff, -0.02em 0.02em 0.01em #ffffff, -0.02em 0.02em 0.01em #ffffff, -0.02em 0.02em 0.01em #ffffff, -0.02em 0.02em 0.01em #ffffff, -0.03em 0.01em 0.01em #ffffff, -0.03em 0.01em 0.01em #ffffff, -0.03em 0.01em 0.01em #ffffff, -0.03em 0.01em 0.01em #ffffff, -0.03em 0.00em 0.01em #ffffff, -0.03em 0.00em 0.01em #ffffff, -0.03em 0.00em 0.01em #ffffff, -0.03em -0.01em 0.01em #ffffff, -0.03em -0.01em 0.01em #ffffff, -0.03em -0.01em 0.01em #ffffff, -0.03em -0.01em 0.01em #ffffff, -0.02em -0.02em 0.01em #ffffff, -0.02em -0.02em 0.01em #ffffff, -0.02em -0.02em 0.01em #ffffff, -0.02em -0.02em 0.01em #ffffff, -0.02em -0.02em 0.01em #ffffff, -0.01em -0.03em 0.01em #ffffff, -0.01em -0.03em 0.01em #ffffff, -0.01em -0.03em 0.01em #ffffff, -0.01em -0.03em 0.01em #ffffff, 0.00em -0.03em 0.01em #ffffff, 0.00em -0.03em 0.01em #ffffff, 0.00em -0.03em 0.01em #ffffff, 0.01em -0.03em 0.01em #ffffff, 0.01em -0.03em 0.01em #ffffff, 0.01em -0.03em 0.01em #ffffff, 0.01em -0.03em 0.01em #ffffff, 0.02em -0.02em 0.01em #ffffff, 0.02em -0.02em 0.01em #ffffff, 0.02em -0.02em 0.01em #ffffff, 0.02em -0.02em 0.01em #ffffff, 0.02em -0.02em 0.01em #ffffff, 0.03em -0.01em 0.01em #ffffff, 0.03em -0.01em 0.01em #ffffff, 0.03em -0.01em 0.01em #ffffff, 0.03em -0.01em 0.01em #ffffff, 0.03em 0.00em 0.01em #ffffff, 0.03em 0.00em 0.01em #ffffff, 0.08em 0.05em 0.01em #e2e2e2, 0.08em 0.05em 0.01em #e2e2e2, 0.08em 0.06em 0.01em #e2e2e2, 0.08em 0.06em 0.01em #e2e2e2, 0.08em 0.06em 0.01em #e2e2e2, 0.08em 0.06em 0.01em #e2e2e2, 0.07em 0.07em 0.01em #e2e2e2, 0.07em 0.07em 0.01em #e2e2e2, 0.07em 0.07em 0.01em #e2e2e2, 0.07em 0.07em 0.01em #e2e2e2, 0.07em 0.07em 0.01em #e2e2e2, 0.06em 0.08em 0.01em #e2e2e2, 0.06em 0.08em 0.01em #e2e2e2, 0.06em 0.08em 0.01em #e2e2e2, 0.06em 0.08em 0.01em #e2e2e2, 0.05em 0.08em 0.01em #e2e2e2, 0.05em 0.08em 0.01em #e2e2e2, 0.05em 0.08em 0.01em #e2e2e2, 0.04em 0.08em 0.01em #e2e2e2, 0.04em 0.08em 0.01em #e2e2e2, 0.04em 0.08em 0.01em #e2e2e2, 0.04em 0.08em 0.01em #e2e2e2, 0.03em 0.07em 0.01em #e2e2e2, 0.03em 0.07em 0.01em #e2e2e2, 0.03em 0.07em 0.01em #e2e2e2, 0.03em 0.07em 0.01em #e2e2e2, 0.03em 0.07em 0.01em #e2e2e2, 0.02em 0.06em 0.01em #e2e2e2, 0.02em 0.06em 0.01em #e2e2e2, 0.02em 0.06em 0.01em #e2e2e2, 0.02em 0.06em 0.01em #e2e2e2, 0.02em 0.05em 0.01em #e2e2e2, 0.02em 0.05em 0.01em #e2e2e2, 0.02em 0.05em 0.01em #e2e2e2, 0.02em 0.04em 0.01em #e2e2e2, 0.02em 0.04em 0.01em #e2e2e2, 0.02em 0.04em 0.01em #e2e2e2, 0.02em 0.04em 0.01em #e2e2e2, 0.03em 0.03em 0.01em #e2e2e2, 0.03em 0.03em 0.01em #e2e2e2, 0.03em 0.03em 0.01em #e2e2e2, 0.03em 0.03em 0.01em #e2e2e2, 0.03em 0.03em 0.01em #e2e2e2, 0.04em 0.02em 0.01em #e2e2e2, 0.04em 0.02em 0.01em #e2e2e2, 0.04em 0.02em 0.01em #e2e2e2, 0.04em 0.02em 0.01em #e2e2e2, 0.05em 0.02em 0.01em #e2e2e2, 0.05em 0.02em 0.01em #e2e2e2, 0.05em 0.02em 0.01em #e2e2e2, 0.06em 0.02em 0.01em #e2e2e2, 0.06em 0.02em 0.01em #e2e2e2, 0.06em 0.02em 0.01em #e2e2e2, 0.06em 0.02em 0.01em #e2e2e2, 0.07em 0.03em 0.01em #e2e2e2, 0.07em 0.03em 0.01em #e2e2e2, 0.07em 0.03em 0.01em #e2e2e2, 0.07em 0.03em 0.01em #e2e2e2, 0.07em 0.03em 0.01em #e2e2e2, 0.08em 0.04em 0.01em #e2e2e2, 0.08em 0.04em 0.01em #e2e2e2, 0.08em 0.04em 0.01em #e2e2e2, 0.08em 0.04em 0.01em #e2e2e2, 0.08em 0.05em 0.01em #e2e2e2, 0.08em 0.05em 0.01em #e2e2e2;
+}
+/* 縁 角 */
+.fuchi_kaku_01em_ffffff {
+  text-shadow: 0.1em 0em 0 #ffffff, 0.1em 0.025em 0 #ffffff, 0.1em 0.05em 0 #ffffff, 0.1em 0.075em 0 #ffffff, 0.1em 0.1em 0 #ffffff, 0.075em 0.1em 0 #ffffff, 0.05em 0.1em 0 #ffffff, 0.025em 0.1em 0 #ffffff, 0em 0.1em 0 #ffffff, -0.025em 0.1em 0 #ffffff, -0.05em 0.1em 0 #ffffff, -0.075em 0.1em 0 #ffffff, -0.1em 0.1em 0 #ffffff, -0.1em 0.075em 0 #ffffff, -0.1em 0.05em 0 #ffffff, -0.1em 0.025em 0 #ffffff, -0.1em 0em 0 #ffffff, -0.1em -0.025em 0 #ffffff, -0.1em -0.05em 0 #ffffff, -0.1em -0.075em 0 #ffffff, -0.1em -0.1em 0 #ffffff, -0.075em -0.1em 0 #ffffff, -0.05em -0.1em 0 #ffffff, -0.025em -0.1em 0 #ffffff, 0em -0.1em 0 #ffffff, 0.025em -0.1em 0 #ffffff, 0.05em -0.1em 0 #ffffff, 0.075em -0.1em 0 #ffffff, 0.1em -0.1em 0 #ffffff, 0.1em -0.075em 0 #ffffff, 0.1em -0.05em 0 #ffffff, 0.1em -0.025em 0 #ffffff;
+}

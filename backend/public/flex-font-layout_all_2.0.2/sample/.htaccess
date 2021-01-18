@@ -1,0 +1,13 @@
+
+RewriteEngine on
+
+# .html にスマホ以外でアクセスしたら、拡張子の前に　__pc を追加する
+RewriteCond %{HTTP_USER_AGENT} !(iPhone|iPad|iPod|Android.*Mobile|Windows.*Phone) [NC]
+RewriteCond %{REQUEST_URI} !__pc\.
+RewriteRule (.*)\.(html) $1__pc.$2 [NS,L]
+
+# / にスマホ以外でアクセスしたら、/index__pc.html の中身を表示する
+RewriteCond %{HTTP_USER_AGENT} !(iPhone|iPad|iPod|Android.*Mobile|Windows.*Phone) [NC]
+RewriteCond %{REQUEST_URI} /$
+RewriteRule (.*) $1index__pc.html [NS,L]
+
